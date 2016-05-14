@@ -1,0 +1,5 @@
+package br.edu.unoesc.pos.calculadora;
+
+public class Operacao {
+
+}

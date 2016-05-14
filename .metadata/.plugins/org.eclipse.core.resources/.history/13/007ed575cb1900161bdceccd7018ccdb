@@ -1,0 +1,16 @@
+package br.edu.unoesc.pos.calculadora;
+
+public class Calculadora {
+	
+	
+	public  void mostrarResultado (Operacao operacao, int x, int y ){
+		
+		System.out.println("Resultado: " + operacao.calcular(x, y) );
+		
+		
+		
+		
+		
+	}
+
+}

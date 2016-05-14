@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ContaCorrenteTest" project="POO_1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="br.edu.unoesc.pos.ContaCorrenteTest" time="0.0">
+    <testcase name="criarContaCorrente" classname="br.edu.unoesc.pos.ContaCorrenteTest" time="0.0"/>
+  </testsuite>
+</testrun>

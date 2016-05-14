@@ -10,7 +10,7 @@ public class ContaTeste {
 
 	public void depositarEalterarSaldo() {
 
-		Conta conta = new Conta();
+		Conta conta = new Poupanca();
 
 		conta.depositar(100.0);
 		conta.depositar(100.0);
@@ -21,7 +21,7 @@ public class ContaTeste {
 
 	public void sacarEalterarSaldo() {
 
-		Conta conta = new Conta();
+		Conta conta = new Poupanca();
 
 		conta.sacar(100.0);
 		assertThat(conta.getSaldo(), is(-100.0));

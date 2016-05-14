@@ -2,7 +2,7 @@ package br.edu.unoesc.pos;
 
 import java.util.Collection;
 
-public class Conta {
+public abstract class Conta {
 
 	private Integer numero = 0;
 	private Double saldo = 0.0;
@@ -19,8 +19,8 @@ public class Conta {
 		this.agencia = agencia;
 		this.cliente = cliente;
 	}
-	
-	//instancializando a class
+
+	// instancializando a class - create
 
 	public void depositar(Double valor) {
 
@@ -28,11 +28,24 @@ public class Conta {
 
 	}
 
-	public void sacar(Double valor) {
-
-		saldo -= valor;
+	/**
+	 * Metodo utilizado para sacar verificando limite do tipo de conta
+	 * @param valor
+	 */
+	
+	public void sacar(Double valor) {   // o final "public final void" indica que o nao pode ser utilizado pela classe filha
+		
+		if (getSaldoDisponivel() >= valor) {
+			saldo -= valor;
+		}
+		else {
+			
+			throw new IllegalArgumentException("Valor indisponivel.");
+		}
 
 	}
+	
+	public abstract Double getSaldoDisponivel(); //para tem um metodo abstrado a class pai tem que ser abstract
 
 	public Double getSaldo() {
 

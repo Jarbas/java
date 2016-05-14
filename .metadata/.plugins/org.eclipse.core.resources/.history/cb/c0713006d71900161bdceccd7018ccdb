@@ -1,0 +1,25 @@
+package br.edu.unoesc.pos;
+
+import java.util.Collection;
+
+public class CalculadoraSadoBanco {
+
+	private Cliente cliente;
+	private Collection<Conta> contas;
+
+	public Double getSaldoCliente() {
+
+		return 0.0;
+
+	}
+	
+	
+	public Double calculaSaldoContas(){
+		
+		
+		
+		
+	}
+	
+
+}

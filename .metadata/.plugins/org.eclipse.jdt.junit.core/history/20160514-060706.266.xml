@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ContaPoupancaTest" project="POO_1" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0">
+    <testcase name="devPopularContaCliente" classname="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0"/>
+    <testcase name="devCalcularSaldo" classname="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0"/>
+    <testcase name="depositarEalterarSaldo2" classname="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0"/>
+    <testcase name="devPopularClienteAgencia" classname="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0"/>
+    <testcase name="sacarEalterarSaldo2" classname="br.edu.unoesc.pos.ContaPoupancaTest" time="0.0"/>
+  </testsuite>
+</testrun>
