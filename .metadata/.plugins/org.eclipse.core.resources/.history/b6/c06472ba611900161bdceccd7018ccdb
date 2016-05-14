@@ -1,0 +1,45 @@
+package br.edu.unoesc.pos;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ContaTeste2 {
+	
+	private Conta conta;
+	
+	@Before
+	
+	public void before(){
+		
+		Conta conta = new Conta();
+		
+		conta.depositar(100.0);	
+		
+	}
+	
+	
+	@Test
+	
+	public void depositarEalterarSaldo() {
+		
+
+		conta.depositar(123.0);
+		assertThat(conta.getSaldo(), is (223.0));
+	}
+	
+	@Test
+	
+	public void sacarEalterarSaldo() {
+		
+		Conta conta = new Conta();
+			
+		conta.sacar(100.0);
+		assertThat(conta.getSaldo(), is (0.0));
+	}
+	
+	
+
+}

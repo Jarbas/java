@@ -1,0 +1,69 @@
+package br.edu.unoesc.pos;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ContaTeste2 {
+
+	private Conta conta;
+
+	@Before
+	public void before() {
+
+		conta = new Conta();
+		conta.depositar(100.00);
+
+	}
+
+	@Test
+	public void depositarEalterarSaldo2() {
+
+		conta.depositar(100.0);
+		assertThat(conta.getSaldo(), is(200.0));
+	}
+
+	@Test
+	public void sacarEalterarSaldo2() {
+
+		conta.sacar(100.0);
+		assertThat(conta.getSaldo(), is(00.0));
+	}
+
+	@Test
+
+	public void devPopularClienteAgencia() {
+
+		Agencia agencia = new Agencia("XXE", "09875");
+
+		Cliente cliente = new Cliente("Jarbas", "4848");
+		Conta conta = new Conta(1234, 0.0, agencia, cliente);
+
+		assertNotNull(conta.getCliente());
+		assertNotNull(conta.getAgencia());
+
+		assertEquals("Jarbas", conta.getCliente().getNome());
+		assertEquals("XXE", conta.getAgencia().getNome());
+
+	}
+
+	@Test
+
+	public void devPopularContaCliente() {
+
+		Agencia agencia = new Agencia("XXE", "09875");
+
+		Cliente cliente = new Cliente("Jarbas", "4848");
+
+		Conta conta = new Conta(1234, agencia, cliente);
+
+		cliente.getContas().add(conta);
+		assertThat(cliente.getContas().size(), is(1));
+
+	}
+
+}
