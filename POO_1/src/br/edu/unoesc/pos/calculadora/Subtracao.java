@@ -6,7 +6,7 @@ package br.edu.unoesc.pos.calculadora;
  *
  */
 
-public class Subtracao extends Operacao {
+public class Subtracao implements Operacao {
 
 	@Override
 	public int calcular(int x, int y) {

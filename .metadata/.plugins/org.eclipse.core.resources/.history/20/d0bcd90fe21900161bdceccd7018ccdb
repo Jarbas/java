@@ -1,0 +1,18 @@
+package br.edu.unoesc.pos.interfac;
+
+public class Portal {
+	
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public void acessa(AcessaPortal acessaPortal){
+		
+		
+		System.out.println("Bem vindo" + acessaPortal.getNickName() );
+		
+		
+	}
+
+}

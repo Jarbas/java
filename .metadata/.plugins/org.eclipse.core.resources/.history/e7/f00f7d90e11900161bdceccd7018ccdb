@@ -1,0 +1,11 @@
+package br.edu.unoesc.pos.interfac;
+
+public class Professor implements AcessaPortal {
+
+	@Override
+	public String getNickName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
